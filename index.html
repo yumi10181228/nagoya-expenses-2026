@@ -17,7 +17,7 @@ const firebaseConfig={
   appId:'1:339452008612:web:56c6ca5a90700bab646e31'
 };
 // 第二階段：請將新 Firebase Authentication 的管理員 UID 填入，並在 Firestore Rules 使用同一 UID。
-const ADMIN_UID='';
+const ADMIN_UID='Rjq4bgIFrJQmJGD4yxBNcOhbiGF3';
 const defaults=['Yumi','則緯','媽媽','爸爸','小阿姨','鈞鈞','巧克力'];
 const $=id=>document.getElementById(id),money=(n,c='TWD')=>(c==='JPY'?'¥':'NT$ ')+new Intl.NumberFormat('zh-TW',{maximumFractionDigits:2}).format(n),fmt=n=>new Intl.NumberFormat('zh-TW',{maximumFractionDigits:2}).format(n);
 let db,auth,isAdmin=false,expenses=[],payments=[],settings={rate:.215,names:defaults},busy=false,unsubs=[];const ready=!!(firebaseConfig.apiKey&&firebaseConfig.projectId&&firebaseConfig.appId);
